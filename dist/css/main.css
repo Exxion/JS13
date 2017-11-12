@@ -1,0 +1,49 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+canvas {
+	border: 7px groove #a8ce6f;
+	box-sizing: border-box;
+	height: 100vmin;
+	width: 100vmin;
+}
+
+div {
+	border: 6px #adadad ridge;
+	border-bottom-width: 0px;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	min-width: 1px;
+}
+
+.outer {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: auto;
+}
+
+.upper {
+	flex: 4;
+}
+
+.chat {
+	flex: 5;
+}
+
+.input {
+	flex: 1;
+	border-bottom-width: 6px;
+}
