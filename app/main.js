@@ -24,3 +24,11 @@ function animate(){
 window.onload = function(){
 	animate();
 }
+
+var exampleSocket = new WebSocket("ws://localhost:8080");
+exampleSocket.onopen = (event) => {
+	exampleSocket.send("Test 01");
+}
+exampleSocket.onmessage = function (event) {
+  console.log(event.data);
+}
